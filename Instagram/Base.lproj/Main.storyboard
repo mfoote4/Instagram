@@ -70,7 +70,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="491"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="398" id="Fhv-ag-hQv" customClass="HomeCell" customModule="Instagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" rowHeight="398" id="Fhv-ag-hQv" customClass="HomeCell" customModule="Instagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="398"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fhv-ag-hQv" id="hEx-qx-1hj">
@@ -99,6 +99,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="LIb-gS-23u"/>
+                    <connections>
+                        <outlet property="tableView" destination="5ue-NH-i4K" id="QBF-SF-was"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7E-s1-fvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

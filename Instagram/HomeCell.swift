@@ -15,10 +15,10 @@ class HomeCell: UITableViewCell {
     @IBOutlet weak var pictureView: PFImageView!
     @IBOutlet weak var captionLabel: UILabel!
     
-    var picsPlusCaption: PFObject! {
+    var fullPost: PFObject! {
         didSet{
-            self.captionLabel.text = picsPlusCaption["caption"] as! String?
-            let picture = picsPlusCaption["picture"] as! PFObject
+            self.captionLabel.text = fullPost["caption"] as! String?
+            let picture = fullPost["picture"] as! PFObject
             self.pictureView.file = picture["image"] as? PFFile
             self.pictureView.loadInBackground()
         }
